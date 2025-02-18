@@ -11,7 +11,7 @@ This project is a slimmed-down version of [tldw](https://github.com/the-crypt-ke
   - [faster_whisper](https://github.com/SYSTRAN/faster-whisper) - Converts speech to text.
   - [pyannote](https://github.com/pyannote/pyannote-audio) - Performs diarization.
 - **`chunker.py`** - Splits text into segments and prepares them for LLM summarization.
-- **`roller-ollama.py`** - Implements rolling summarization.
+- **`roller.py`** - Implements rolling summarization.
 
 ## Disclaimer
 
