@@ -1,19 +1,18 @@
-# Too Long, Didnt Watch
+# Too Long, Didn't Watch - Local
 
-YouTube contains an incredible amount of knowledge, much of which is locked inside multi-hour videos.  Let's extract and summarize with AI!
+Summarize local videos using an Ollama server.
 
-- `diarize.py` - download, transrcibe and diarize audio
-  - [yt-dlp](https://github.com/yt-dlp/yt-dlp) - download audio tracks of youtube videos
-  - [ffmpeg](https://github.com/FFmpeg/FFmpeg) - decompress audio
-  - [faster_whisper](https://github.com/SYSTRAN/faster-whisper) - speech to text
-  - [pyannote](https://github.com/pyannote/pyannote-audio) - diarization
+This project is a slimmed-down version of [tldw](https://github.com/the-crypt-keeper/tldw), from which the majority of the code originates. Special thanks to the original authors!
 
-- `chunker.py` - break text into parts and prepare each part for LLM summarization
+## Files
 
-- `roller-*.py` - rolling summarization
-  - [can-ai-code](https://github.com/the-crypt-keeper/can-ai-code) - interview executors to run LLM inference
+- **`diarize.py`** - Downloads, transcribes, and diarizes audio.
+  - [FFmpeg](https://github.com/FFmpeg/FFmpeg) - Decompresses audio.
+  - [faster_whisper](https://github.com/SYSTRAN/faster-whisper) - Converts speech to text.
+  - [pyannote](https://github.com/pyannote/pyannote-audio) - Performs diarization.
+- **`chunker.py`** - Splits text into segments and prepares them for LLM summarization.
+- **`roller-ollama.py`** - Implements rolling summarization.
 
-- `compare.py` - prepare LLM outputs for webapp
-- `compare-app.py` - summary viewer webapp
+## Disclaimer
 
-This project is under active development and is not ready for production use.
+This project is currently under development and only for personal use.
